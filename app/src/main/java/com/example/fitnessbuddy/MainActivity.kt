@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
                         val user: FirebaseUser? = auth.currentUser
                         Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
                         val intent = Intent(this, LoginScreen::class.java)
+                        intent.putExtra("email", email) // Pass the email as an extra for loginscreen welcome.
                         startActivity(intent)
                     } else {
                         // Login failed
