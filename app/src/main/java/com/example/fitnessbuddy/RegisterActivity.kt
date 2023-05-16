@@ -41,10 +41,10 @@ class RegisterActivity : AppCompatActivity() {
 
                         Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
 
-                        //tillbaka om de lyckas
+                        // Finish the current activity to prevent going back to it
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
-                        finish() // Finish the current activity to prevent going back to it
+                        finish()
                     } else {
 
                         Toast.makeText(this, "Registration failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".LoginScreen">
+
+    <TextView
+        android:id="@+id/welcomeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/loginInfoTV1"
+        android:layout_below="@+id/welcomeTV"
+        android:padding="20dp"
+        android:background="@android:color/system_neutral2_800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="s" />
+
+    <TextView
+        android:id="@+id/informationTV1"
+        android:layout_below="@+id/loginInfoTV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="test"/>
+
+
+</RelativeLayout>
