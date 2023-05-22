@@ -22,7 +22,7 @@ class LoginScreen : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_home) // Set the home icon
+       // supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_home) // Set the home icon
 
         loginInfoTV1 = binding.loginInfoTV1!!
 
