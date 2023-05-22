@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/appbackgrounddarkblue"
+    android:background="@color/black_shade_1"
     tools:context=".LoginScreen">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:title="              Fitness Buddy"
+        app:title="           Fitness Buddy"
         app:navigationIcon="@drawable/ic_home"
         app:titleTextColor="@color/white"
         />
@@ -31,6 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:layout_marginTop="117dp"
+        android:text="username"
+        android:background="#2C2B2B"
         android:gravity="center"
         android:padding="20dp"
         android:textColor="@color/white"
@@ -43,20 +45,32 @@
         android:layout_below="@+id/loginInfoTV1"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Navigate through the bottom and choose what exercise you would like to do today."
+        android:text="Navigate through the menu and choose what you would like to do today."
         android:textColor="@color/white"
         android:textSize="17dp" />
+
+    <LinearLayout
+        android:id="@+id/linnearLayoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/informationTV2"
+        android:orientation="horizontal">
+
+
+
+
+    </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonLogout"
         android:layout_width="188dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/informationTV2"
-        android:layout_marginTop="317dp"
+        android:layout_below="@+id/linnearLayoutLogin"
+        android:layout_marginTop="270dp"
         android:background="@drawable/button_green"
         android:backgroundTint="#FA0404"
-        android:text="Logout"
         android:layout_centerHorizontal="true"
+        android:text="Logout"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold" />

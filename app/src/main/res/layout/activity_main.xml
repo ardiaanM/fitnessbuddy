@@ -23,7 +23,7 @@
         android:layout_below="@+id/textViewTitle"
         android:layout_marginTop="53dp"
         android:gravity="center"
-        android:text="Please insert your information."
+        android:text="Please insert your login information"
         android:textColor="@color/white" />
 
     <EditText
