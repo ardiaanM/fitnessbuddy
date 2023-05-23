@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/appbackgrounddarkblue"
+    android:background="@color/black_shade_1"
     tools:context=".LoginScreen">
 
     <androidx.appcompat.widget.Toolbar
@@ -21,8 +21,8 @@
         android:layout_width="97dp"
         android:layout_height="74dp"
         android:layout_below="@id/toolbar"
-        android:layout_marginTop="41dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="41dp"
         android:background="@drawable/profilepic" />
 
     <TextView
@@ -42,22 +42,124 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/loginInfoTV1"
         android:gravity="center"
-        android:padding="10dp"
+        android:padding="16dp"
         android:text="Navigate through the bottom and choose what exercise you would like to do today."
         android:textColor="@color/white"
-        android:textSize="17dp" />
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/ExercisesLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/informationTV2"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_orange">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="50dp"
+            android:src="@drawable/exersices" />
+
+        <TextView
+            android:layout_width="359dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Exercises"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/WorkoutsLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ExercisesLL"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_orange">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="50dp"
+            android:src="@drawable/workouts" />
+
+        <TextView
+            android:layout_width="359dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Complete Workouts"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MealsLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/WorkoutsLL"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_orange">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="50dp"
+            android:src="@drawable/meals" />
+
+        <TextView
+            android:layout_width="359dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Meals"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/SupportLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/MealsLL"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_orange">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="50dp"
+            android:src="@drawable/support" />
+
+        <TextView
+            android:layout_width="359dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Support"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonLogout"
         android:layout_width="188dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/informationTV2"
-        android:layout_marginTop="317dp"
+        android:layout_marginTop="346dp"
         android:background="@drawable/button_green"
         android:backgroundTint="#FA0404"
         android:text="Logout"
-        android:layout_centerHorizontal="true"
         android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
         android:textSize="15sp"
         android:textStyle="bold" />
 
