@@ -5,14 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import android.widget.TextView
+import android.widget.Toast
 import com.example.fitnessbuddy.R
 import com.example.fitnessbuddy.databinding.ActivityLoginScreenBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginScreen : AppCompatActivity() {
 
     private lateinit var loginInfoTV1: TextView
     private lateinit var toolbar: Toolbar
     private lateinit var binding: ActivityLoginScreenBinding
+    private lateinit var ExercisesTV: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +28,13 @@ class LoginScreen : AppCompatActivity() {
        // supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_home) // Set the home icon
 
         loginInfoTV1 = binding.loginInfoTV1!!
+
+        ExercisesTV = binding.ExercisesTV
+
+        ExercisesTV.setOnClickListener {
+            val intent = Intent(this, ExercisesMenu::class.java)
+            startActivity(intent)
+        }
 
 
         val email = intent.getStringExtra("email")
@@ -42,6 +52,21 @@ class LoginScreen : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val buttonLogout = binding.buttonLogout
+
+        buttonLogout.setOnClickListener {
+            // Sign out the user from Firebase Auth
+            FirebaseAuth.getInstance().signOut()
+
+            Toast.makeText(this, "Logout successful", Toast.LENGTH_SHORT).show()
+
+            // Redirect the user to the login screen
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 
 }

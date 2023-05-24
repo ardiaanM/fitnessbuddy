@@ -44,6 +44,7 @@ class ExercisesMenu : AppCompatActivity() {
             ExerciseCollection.startActivity(this, selectedExercises)
         }
 
+
     }
 
     private fun getExercisesForBodyPart(bodyPart: String): List<Exercise> {
