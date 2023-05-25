@@ -16,6 +16,8 @@ import java.io.IOException
 
 class MealsAIMenu : AppCompatActivity() {
     private val client = OkHttpClient()
+    private val answerList = mutableListOf<String>() // List to store the answers
+    private lateinit var txtResponse: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,21 +25,38 @@ class MealsAIMenu : AppCompatActivity() {
 
         val etQuestion = findViewById<EditText>(R.id.etQuestion)
         val btnSubmit = findViewById<Button>(R.id.btnSubmit)
-        val txtResponse = findViewById<TextView>(R.id.txtResponse)
-
+        txtResponse = findViewById<TextView>(R.id.txtResponse)
+        val btnClear = findViewById<Button>(R.id.btnClear)
 
         btnSubmit.setOnClickListener {
-            val question=etQuestion.text.toString().trim()
-            Toast.makeText(this,question,Toast.LENGTH_SHORT).show()
-            if(question.isNotEmpty()){
-            getResponse(question) { response ->
-                runOnUiThread {
-                    txtResponse.text = response
+            val question = etQuestion.text.toString().trim()
+            Toast.makeText(this, "Generating Answer..", Toast.LENGTH_SHORT).show()
+            if (question.isNotEmpty()) {
+                getResponse(question) { response ->
+                    runOnUiThread {
+                        answerList.add(response) // Add the response to the list
+                        updateAnswerText() // Update the text view with all the answers
+                        etQuestion.text.clear() // Clear the EditText
+                    }
                 }
             }
-
-            }
         }
+
+        btnClear.setOnClickListener {
+            clearAnswers()
+            Toast.makeText(this, "Answers cleared!", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun updateAnswerText() {
+        // Build the combined text of all the answers in the list
+        val combinedText = answerList.joinToString("\n\n")
+        txtResponse.text = combinedText
+    }
+
+    private fun clearAnswers() {
+        answerList.clear()
+        txtResponse.text = ""
     }
 
     fun getResponse(question:String, callback: (String) -> Unit){

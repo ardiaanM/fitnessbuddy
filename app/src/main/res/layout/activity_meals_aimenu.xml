@@ -8,6 +8,11 @@
     android:background="@color/black_shade_1"
     tools:context=".MealsAIMenu">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:src="@drawable/robotheart"/>
+
     <EditText
         android:id="@+id/etQuestion"
         android:layout_width="match_parent"
@@ -16,15 +21,41 @@
         android:hint="Enter your question here..."
         android:textColorHint="@color/white"
         android:gravity="center"/>
-    
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSubmit"
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_green"
-        android:text="Submit"/>
+        android:gravity="center"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/button_green"
+            android:text="Submit" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/btnSubmit"
+            android:background="@drawable/button_bg"
+            android:text="Clear" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white" />
+
 
     <ScrollView
         android:layout_width="match_parent"
