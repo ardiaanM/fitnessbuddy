@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">fitnessbuddy</string>
+
+    <string name="hinttextview">The response will appear here! You can ask it anything! \n Example: \n - Make me a protein pancake recipe \n - Whats good after working out? \n - How often should i train? \n - ETC. </string>
 </resources>

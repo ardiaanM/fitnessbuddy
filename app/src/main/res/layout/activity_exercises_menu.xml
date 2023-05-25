@@ -22,8 +22,11 @@
         <LinearLayout
             android:id="@+id/exerciseContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+        </LinearLayout>
 
     </ScrollView>
 
@@ -44,8 +47,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sendButton"
+        android:background="@drawable/button_green"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Send"

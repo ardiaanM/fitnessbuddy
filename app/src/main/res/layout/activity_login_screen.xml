@@ -114,16 +114,17 @@
         <ImageView
             android:layout_width="64dp"
             android:layout_height="50dp"
-            android:src="@drawable/meals" />
+            android:src="@drawable/health" />
 
         <TextView
-            android:layout_width="359dp"
-            android:layout_height="30dp"
+            android:layout_width="167dp"
+            android:layout_height="32dp"
             android:layout_gravity="center"
-            android:text="Meals"
+            android:text="Healthy AI"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
 
     </LinearLayout>
 

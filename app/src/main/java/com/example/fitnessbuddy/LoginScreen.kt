@@ -25,7 +25,7 @@ class LoginScreen : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-       // supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_home) // Set the home icon
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_home) // Set the home icon
 
         loginInfoTV1 = binding.loginInfoTV1!!
 
@@ -66,6 +66,14 @@ class LoginScreen : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val mealsLL = binding.MealsLL
+
+        mealsLL.setOnClickListener {
+            val intent = Intent(this, MealsAIMenu::class.java)
+            startActivity(intent)
+        }
+
 
     }
 
