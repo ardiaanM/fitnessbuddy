@@ -8,6 +8,8 @@
     android:background="@color/black_shade_1"
     tools:context=".MealsAIMenu">
 
+    <!-- AI MENU. -->
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="123dp"

@@ -4,6 +4,8 @@
     android:layout_height="wrap_content"
     android:padding="8dp">
 
+    <!-- How the view looks when you select bodypart in Workout Planner, Image placeholder and text. -->
+
     <ImageView
         android:id="@+id/exerciseImageView"
         android:layout_width="79dp"

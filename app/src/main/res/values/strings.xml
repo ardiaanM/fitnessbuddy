@@ -1,5 +1,21 @@
 <resources>
     <string name="app_name">fitnessbuddy</string>
 
+    <string name="app_workoutcollection">Click on Legs to choose different bodyparts. \nAnd click on the exercise you desire to collect them to Exercise Collection.</string>
+
+    <string name="app_exercises">This is the exercise tab, here you can search between exercises with an implemented API that gives you different workouts when you search for a bodypart.</string>
+
+    <string name="app_workout">This is the workout tab, here you can choose your own exercises and then combine them and make ur own gym schedule for the day there is also a rest-timer in there that counts down to 0 from 1 minute.</string>
+
+    <string name="app_healthyai">This is the Healthy AI tab, on this you can *chat* with an AI that is implemented from Chat GPT API, it answers all your questions about Gym, health, food etc.</string>
+
+    <string name="app_ai">The Ai is an robot that answers your questions, its implemented with an API from OpenAI.com this answers all your questions about anything, but most imporantly about, Health, Exercises, Meals etc.</string>
+    <string name="app_timer">The rest timer is there for showing you how much you should rest between sets of course you can choose how much you want to rest but recommended is 1 minute. Click on it and it starts. </string>
+    <string name="app_preview">This is the *Preview* button, if you click on this in the exercise collection that you chose a GIF-Image will appear and show you how you should do the exercise.</string>
+    <string name="app_update">*Add A clear button when you select workouts. \n* Fix AI to continue response and modify your response if lets say you want to remove an ingridient. \n* Add same GIFs of the workouts and add gifs to all exercises. \n* More Exercises \n* Ability to mail the support \n* Cleaner Design.</string>
+
+
+    <string name="app_about">Fitness Buddy was created by Ardian Muriqi during a project task in Mobile App Development, it is written in kotlin and in Android Studio. \n Here is some info about what you see on the application.</string>
+
     <string name="hinttextview">* The responses will appear here! You can ask it anything! \n * Answers will be separate, scroll to find the new answers. \n Example: \n - Make me a protein pancake recipe \n - Whats good after working out? \n - How often should i train? \n And much more..! </string>
 </resources>

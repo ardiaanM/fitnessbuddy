@@ -11,13 +11,25 @@
     <Spinner
         android:id="@+id/bodyPartSpinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
         android:entries="@array/body_parts" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:text="@string/app_workoutcollection"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
 
         <LinearLayout
             android:id="@+id/exerciseContainer"
@@ -34,12 +46,14 @@
         android:id="@+id/exerciseInfoTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
         android:textSize="23sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:gravity="center"
-        android:text="Exercise Collection" />
+        android:background="#FF7803"
+        android:text="Exercise Collection ↓" />
+
+    <!-- exercise_collector_item reference. Shows the name of the exercise under @exerciseinfotextview. -->
 
     <LinearLayout
         android:id="@+id/collectorContainer"
@@ -47,12 +61,33 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" />
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sendButton"
-        android:background="@drawable/button_green"
-        android:layout_width="match_parent"
+        android:background="#5ED520"
+        android:layout_width="100dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:text="Send"
         android:layout_margin="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clearExerciseButton"
+        android:background="@color/white"
+        android:layout_width="100dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_margin="16dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -17,4 +17,12 @@
     <style name="ToolbarTitle">
         <item name="android:textAlignment">center</item>
     </style>
+
+    <!-- Spinner style. -->
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

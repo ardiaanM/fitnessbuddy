@@ -7,6 +7,8 @@
     android:orientation="horizontal"
     tools:context=".RegisterActivity">
 
+    <!-- Register View -->
+
     <TextView
         android:id="@+id/RegisterTV"
         android:layout_width="match_parent"

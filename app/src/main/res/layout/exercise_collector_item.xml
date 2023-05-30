@@ -6,6 +6,8 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- The Exercise collection list under exercise collection Textview.. -->
+
     <TextView
         android:id="@+id/collectedExerciseNameTextView"
         android:layout_width="wrap_content"
@@ -13,7 +15,7 @@
         android:text="Exercise Name"
         android:layout_gravity="center"
         android:textColor="@android:color/white"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 </LinearLayout>

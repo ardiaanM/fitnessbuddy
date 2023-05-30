@@ -1,3 +1,5 @@
+//Login Screen Tab as the "Profile-Menu"
+
 package com.example.fitnessbuddy
 
 import android.content.Intent
@@ -37,6 +39,7 @@ class LoginScreen : AppCompatActivity() {
         }
 
 
+
         val email = intent.getStringExtra("email")
 
         // Split the email to only the name
@@ -52,6 +55,21 @@ class LoginScreen : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val informationLLL = binding.InformationLLL
+
+        informationLLL.setOnClickListener {
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
+
+        val workoutsLL = binding.WorkoutsLL
+
+        workoutsLL.setOnClickListener {
+            val intent = Intent(this, CompleteWorkouts::class.java)
+            startActivity(intent)
+        }
+
 
         val buttonLogout = binding.buttonLogout
 
@@ -73,6 +91,8 @@ class LoginScreen : AppCompatActivity() {
             val intent = Intent(this, MealsAIMenu::class.java)
             startActivity(intent)
         }
+
+
 
 
     }

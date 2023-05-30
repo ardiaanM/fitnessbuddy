@@ -7,6 +7,8 @@
     android:background="@color/black_shade_1"
     tools:context=".LoginScreen">
 
+    <!-- Information VIew -->
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -63,14 +65,14 @@
         <ImageView
             android:layout_width="64dp"
             android:layout_height="50dp"
-            android:src="@drawable/exersices" />
+            android:src="@drawable/workouts" />
 
         <TextView
             android:id="@+id/ExercisesTV"
             android:layout_width="359dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:text="Exercises"
+            android:text="Workout Planner"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
@@ -89,13 +91,13 @@
         <ImageView
             android:layout_width="64dp"
             android:layout_height="50dp"
-            android:src="@drawable/workouts" />
+            android:src="@drawable/exersices" />
 
         <TextView
             android:layout_width="359dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:text="Complete Workouts"
+            android:text="Exercises"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
@@ -130,7 +132,7 @@
 
 
     <LinearLayout
-        android:id="@+id/SupportLL"
+        android:id="@+id/InformationLLL"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/MealsLL"
@@ -141,13 +143,13 @@
         <ImageView
             android:layout_width="64dp"
             android:layout_height="50dp"
-            android:src="@drawable/support" />
+            android:src="@drawable/information" />
 
         <TextView
             android:layout_width="359dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:text="Support"
+            android:text="Information and more"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>

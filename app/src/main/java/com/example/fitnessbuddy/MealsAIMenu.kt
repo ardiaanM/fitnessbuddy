@@ -1,3 +1,5 @@
+//MEALSAIMENU, more known now as "Healthy-AI" Refactor?
+
 package com.example.fitnessbuddy
 
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +9,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.example.fitnessbuddy.databinding.ActivityMainBinding
+import com.example.fitnessbuddy.databinding.ActivityMealsAimenuBinding
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody.Companion.toRequestBody
@@ -18,10 +22,12 @@ class MealsAIMenu : AppCompatActivity() {
     private val client = OkHttpClient()
     private val answerList = mutableListOf<String>() // List to store the answers
     private lateinit var txtResponse: TextView
+    private lateinit var binding: ActivityMealsAimenuBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_meals_aimenu)
+        binding = ActivityMealsAimenuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val etQuestion = findViewById<EditText>(R.id.etQuestion)
         val btnSubmit = findViewById<Button>(R.id.btnSubmit)

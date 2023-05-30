@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/abtfbTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Fitness Buddy"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/aboutTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abtfbTV"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/teal_700"
+        android:padding="10dp"
+        android:text="@string/app_about"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/linnearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/aboutTV">
+
+    <ImageView
+        android:id="@+id/exerciseinfoimageview"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        android:src="@drawable/workouts"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_workout"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linnearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/linnearlayout1">
+
+        <ImageView
+            android:id="@+id/exerciseinfoimageview2"
+            android:layout_width="59dp"
+            android:layout_height="50dp"
+            android:src="@drawable/exersices"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_exercises"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linnearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/linnearlayout2">
+
+        <ImageView
+            android:id="@+id/exerciseinfoimageview3"
+            android:layout_width="59dp"
+            android:layout_height="50dp"
+            android:src="@drawable/health"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_healthyai"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/informationTV3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Good To Know."
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"
+        android:layout_below="@id/linnearlayout3"/>
+
+    <LinearLayout
+        android:id="@+id/linnearlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/informationTV3">
+
+        <ImageView
+            android:id="@+id/exerciseinfoimageview4"
+            android:layout_width="77dp"
+            android:layout_height="71dp"
+            android:src="@drawable/resttimer1" />
+
+        <ImageView
+            android:id="@+id/exerciseinfoimageview5"
+            android:layout_width="56dp"
+            android:layout_height="69dp"
+            android:src="@drawable/resttimer2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_timer"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linnearlayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/linnearlayout4">
+
+        <ImageView
+            android:id="@+id/exerciseinfoimageview6"
+            android:layout_width="59dp"
+            android:layout_height="50dp"
+            android:src="@drawable/robotheart"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_ai"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linnearlayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/linnearlayout5">
+
+        <ImageView
+            android:id="@+id/exerciseinfoimageview7"
+            android:layout_width="59dp"
+            android:layout_height="50dp"
+            android:src="@drawable/previewbutton"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_timer"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/informationTV4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Updates."
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"
+        android:layout_below="@id/linnearlayout6"/>
+
+    <TextView
+        android:id="@+id/informationTV5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/informationTV4"
+        android:text="@string/app_update"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginLeft="6dp"
+        android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black_shade_1"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="match_parent"
+    tools:context=".WorkOutDetailsActivity">
+
+    <!-- Details of the Name type etc that is shown when you click on a workout after searching for it. -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/workoutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"
+            />
+
+        <TextView
+            android:id="@+id/workoutType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/workoutName"
+            tools:text="Type" />
+
+        <TextView
+            android:id="@+id/difficulty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guide"
+            app:layout_constraintTop_toBottomOf="@+id/workoutName"
+            tools:text="Difficulty"/>
+
+        <TextView
+            android:id="@+id/equipment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/workoutType"
+            tools:text="Equipment" />
+
+        <TextView
+            android:id="@+id/muscle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guide"
+            app:layout_constraintTop_toBottomOf="@+id/workoutType"
+            tools:text="Muscle" />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            app:layout_goneMarginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/equipment"
+            tools:text="description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

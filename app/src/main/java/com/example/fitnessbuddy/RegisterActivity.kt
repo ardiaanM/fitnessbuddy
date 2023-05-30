@@ -1,3 +1,5 @@
+//Registration Page. connected with firebase auth.
+
 package com.example.fitnessbuddy
 
 import android.content.Intent
