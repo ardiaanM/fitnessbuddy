@@ -23,28 +23,28 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".WorkOutDetailsActivity"
+            android:name=".ExercisesDetailsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CompleteWorkouts"
+            android:name=".ExercisesActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MealsAIMenu"
+            android:name=".HealthAiActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ExerciseCollection"
+            android:name=".WorkoutCollectionOfExercises"
             android:exported="false"
             android:label="Exercise Collection">
             <meta-data
@@ -59,7 +59,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginScreen"
+            android:name=".ProfileActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

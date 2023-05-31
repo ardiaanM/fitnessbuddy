@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">fitnessbuddy</string>
 
-    <string name="app_workoutcollection">Click on Legs to choose different bodyparts. \nAnd click on the exercise you desire to collect them to Exercise Collection.</string>
+    <string name="app_workoutcollection">Click on the white menu above to choose different bodyparts. \nAnd click on the exercise you desire to collect them to Exercise Collection.</string>
 
     <string name="app_exercises">This is the exercise tab, here you can search between exercises with an implemented API that gives you different workouts when you search for a bodypart.</string>
 

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+    android:background="@color/black_shade_1"
     tools:context=".RegisterActivity">
 
     <!-- Register View -->
@@ -14,18 +15,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:gravity="center"
-        android:textSize="30dp"/>
+        android:textSize="40sp"/>
 
     <EditText
         android:id="@+id/editTextEmail"
+        android:textColorHint="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:layout_below="@id/RegisterTV"
         android:hint="Enter Email Here"/>
 
     <EditText
         android:id="@+id/editTextPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextEmail"
@@ -33,8 +40,9 @@
         android:password="true"/>
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonRegister"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
