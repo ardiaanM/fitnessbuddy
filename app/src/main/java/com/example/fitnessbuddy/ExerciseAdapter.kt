@@ -20,14 +20,13 @@ class ExerciseAdapter(private val exerciseDataClassList: List<ExerciseDataClass>
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WorkoutViewHolder {
-        // Inflate the layout for a single workout item and return the ViewHolder
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.exercise_description_layout, parent, false) // Modify the code if needed: Update the layout resource file
+            .inflate(R.layout.exercise_description_layout, parent, false)
         return WorkoutViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: WorkoutViewHolder, position: Int) {
-        // Bind the workout data to the ViewHolder's UI components
+
         val workout = exerciseDataClassList[position]
         holder.nameTextView.text = workout.name // Display exercise name
         holder.typeTextView.text = workout.type // Display exercise type
@@ -35,9 +34,9 @@ class ExerciseAdapter(private val exerciseDataClassList: List<ExerciseDataClass>
         holder.itemView.setOnClickListener {
             // Start the activity to display exercise details when the item is clicked
             val workoutDetailsIntent =  Intent(context, ExercisesDetailsActivity::class.java)
-            workoutDetailsIntent.putExtra("name", workout.name) // Pass exercise name as an extra
-            workoutDetailsIntent.putExtra("type", workout.type) // Pass exercise type as an extra
-            workoutDetailsIntent.putExtra("difficulty", workout.difficulty) // Modify the code if needed: Pass additional exercise details as extras
+            workoutDetailsIntent.putExtra("name", workout.name)
+            workoutDetailsIntent.putExtra("type", workout.type)
+            workoutDetailsIntent.putExtra("difficulty", workout.difficulty)
             workoutDetailsIntent.putExtra("equipment", workout.equipment)
             workoutDetailsIntent.putExtra("muscle", workout.muscle)
             workoutDetailsIntent.putExtra("instructions", workout.instructions)

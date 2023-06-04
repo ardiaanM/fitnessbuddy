@@ -59,7 +59,7 @@ class ExercisesActivity : AppCompatActivity() {
                     val mapper = ObjectMapper()
                     val root: JsonNode = mapper.readTree(responseStream)
                     Log.d("FitnessBuddy", "root: $root")
-                    // Process the JSON response as needed
+                    // Process the JSON response
                     val exercises = root
                     //Log.d("FitnessBuddy", "Exercise Count: ${exercises.size()}")
                     exerciseDataClassList.clear() // Clear the existing workout list

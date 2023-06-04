@@ -108,7 +108,7 @@ class ExercisesMenu : AppCompatActivity() {
 
     }
 
-    //here is the collection of all workouts and images for them.
+    //Collection of all workouts and images and descrp.
 
     private fun getExercisesForBodyPart(bodyPart: String): List<Exercise> {
         return when (bodyPart) {
